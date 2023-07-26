@@ -163,6 +163,7 @@ public class ElevatorCab {
             this.status = Status.ISSTANDINGWITHOPENDOORS;
             System.out.println(this.status);
             System.out.println("Лифт на " + floor + " этаже.");
+            System.out.println("Заходите в лифт");
             this.status = Status.ISCLOSING;
             System.out.println(Status.ISCLOSING);
         }else if (numberOfCab == 2 && floor < Floor.getCurrentFloor2Cab()){
@@ -179,6 +180,7 @@ public class ElevatorCab {
             this.status = Status.ISSTANDINGWITHOPENDOORS;
             System.out.println(this.status);
             System.out.println("Лифт на " + floor + " этаже.");
+            System.out.println("Заходите в лифт");
             this.status = Status.ISCLOSING;
             System.out.println(Status.ISCLOSING);
 
@@ -197,6 +199,7 @@ public class ElevatorCab {
             this.status = Status.ISSTANDINGWITHOPENDOORS;
             System.out.println(this.status);
             System.out.println("Лифт на " + floor + " этаже.");
+            System.out.println("Заходите в лифт");
             this.status = Status.ISCLOSING;
             System.out.println(Status.ISCLOSING);
         }else if (numberOfCab == 2 && floor > Floor.getCurrentFloor1Cab()){
@@ -213,6 +216,7 @@ public class ElevatorCab {
             this.status = Status.ISSTANDINGWITHOPENDOORS;
             System.out.println(this.status);
             System.out.println("Лифт на " + floor + " этаже.");
+            System.out.println("Заходите в лифт");
             this.status = Status.ISCLOSING;
             System.out.println(Status.ISCLOSING);
 
@@ -222,6 +226,7 @@ public class ElevatorCab {
             this.status = Status.ISSTANDINGWITHOPENDOORS;
             System.out.println(this.status);
             System.out.println("Лифт на " + floor + " этаже.");
+            System.out.println("Заходите в лифт");
             this.status = Status.ISCLOSING;
             System.out.println(Status.ISCLOSING);
         }
