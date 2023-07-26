@@ -10,15 +10,16 @@ import java.util.TreeSet;
 //Методы:
 //n. Нажать кнопку вызова лифта
 public class Floor {
-    private int currentFloor1Cab;
-    private int currentFloor2Cab;
+    private static int currentFloor1Cab;
+    private static int currentFloor2Cab;
     private Status currentStatus1Cab;
     private Status currentStatus2Cab;
     private boolean isPushed = false;
 
-    private Floor() {
-        this.currentFloor1Cab = 1;
-        this.currentFloor2Cab = 1;
+    Floor() {
+        int CURRENTFLOOR = 1;
+        this.currentFloor1Cab = CURRENTFLOOR;
+        this.currentFloor2Cab = CURRENTFLOOR;
         this.currentStatus1Cab = Status.ISSTANDINGWITHOPENDOORS;
         this.currentStatus2Cab = Status.ISSTANDINGWITHOPENDOORS;
         this.isPushed = false;
@@ -27,7 +28,7 @@ public class Floor {
         this.isPushed = true;
     }
 
-    public int getCurrentFloor1Cab() {
+    public static int getCurrentFloor1Cab() {
         return currentFloor1Cab;
     }
 
@@ -35,7 +36,7 @@ public class Floor {
         this.currentFloor1Cab = currentFloor1Cab;
     }
 
-    public int getCurrentFloor2Cab() {
+    public static int getCurrentFloor2Cab() {
         return currentFloor2Cab;
     }
 

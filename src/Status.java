@@ -2,11 +2,11 @@
 // стоит с открытыми дверьми)
 
 public enum Status {
-    ISGOINGUP("Едет вверх"),
-    ISGOINGDOWN("Едет вниз"),
-    ISOPENING("Открывает двери"),
-    ISCLOSING("Закрывает двери"),
-    ISSTANDINGWITHOPENDOORS("Стоит с открытыми дверьми");
+    ISGOINGUP("Едет вверх."),
+    ISGOINGDOWN("Едет вниз."),
+    ISOPENING("Открывает двери."),
+    ISCLOSING("Закрывает двери."),
+    ISSTANDINGWITHOPENDOORS("Стоит с открытыми дверьми.");
     private String status;
 
     Status(String status) {
@@ -21,7 +21,7 @@ public enum Status {
 
     @Override
     public String toString() {
-        return "Лифт" +
+        return "Лифт " +
                   status ;
     }
 }
